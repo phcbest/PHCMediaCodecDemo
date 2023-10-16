@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "PHCMediaCodecDemo"
 include(":app")
+include(":PMediaCodeLib")
