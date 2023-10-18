@@ -5,9 +5,12 @@ import android.util.Log
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.media3.common.MediaItem
+import androidx.media3.common.util.UriUtil
 import androidx.media3.exoplayer.ExoPlayer
+import com.blankj.utilcode.util.UriUtils
 import com.gowow.phcmediacodecdemo.base.BaseActivity
 import com.gowow.phcmediacodecdemo.databinding.ActivityFrameExtractionBinding
+import com.gowow.pmediacodelib.VideoEdit
 
 class FrameExtractionActivity :
 
@@ -27,6 +30,7 @@ class FrameExtractionActivity :
                     it.prepare()
                     it.play()
                 }
+                uri.encodedPath?.let { VideoEdit.getVideoInfo(UriUtils.uri2File(uri).path) }
             } else {
                 Log.d("PhotoPicker", "No media selected")
             }
