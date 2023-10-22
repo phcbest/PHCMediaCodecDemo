@@ -18,5 +18,11 @@
             android:layout_height="wrap_content"
             android:text="抽帧" />
 
+        <Button
+            android:id="@+id/btnH265Play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="H265播放" />
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 </layout>

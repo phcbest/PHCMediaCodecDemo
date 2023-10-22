@@ -12,5 +12,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         binding.btnGotoFrameExtraction.setOnClickListener {
             startActivity(Intent(this@MainActivity, FrameExtractionActivity::class.java))
         }
+        binding.btnH265Play.setOnClickListener {
+            startActivity(Intent(this@MainActivity, H265VideoPlayMainActivity::class.java))
+        }
     }
 }
