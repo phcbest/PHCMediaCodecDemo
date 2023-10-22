@@ -13,7 +13,7 @@
         android:theme="@style/Theme.PHCMediaCodecDemo"
         tools:targetApi="34">
         <activity
-            android:name=".H265VideoPlayMainActivity"
+            android:name=".H264VideoPlayMainActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

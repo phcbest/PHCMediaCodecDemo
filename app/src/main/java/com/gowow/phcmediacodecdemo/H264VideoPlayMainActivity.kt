@@ -2,18 +2,15 @@ package com.gowow.phcmediacodecdemo
 
 import android.media.MediaCodec
 import android.media.MediaFormat
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore.Audio.Media
-import androidx.media3.decoder.DecoderException
 import com.gowow.phcmediacodecdemo.base.BaseActivity
-import com.gowow.phcmediacodecdemo.databinding.ActivityH265VideoPlayMainBinding
+import com.gowow.phcmediacodecdemo.databinding.ActivityH264VideoPlayMainBinding
 
 /**
  * [参考文章](https://juejin.cn/post/7213733567606652985)
  */
-class H265VideoPlayMainActivity :
-    BaseActivity<ActivityH265VideoPlayMainBinding>(ActivityH265VideoPlayMainBinding::inflate) {
+class H264VideoPlayMainActivity :
+    BaseActivity<ActivityH264VideoPlayMainBinding>(ActivityH264VideoPlayMainBinding::inflate) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         initMediaCodec()
