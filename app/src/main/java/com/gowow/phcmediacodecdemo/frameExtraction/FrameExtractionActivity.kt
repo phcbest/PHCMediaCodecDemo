@@ -31,6 +31,7 @@ class FrameExtractionActivity :
                     it.play()
                 }
                 uri.encodedPath?.let { VideoEdit.getVideoInfo(UriUtils.uri2File(uri).path) }
+                uri.encodedPath?.let { VideoEdit.extractFrames(UriUtils.uri2File(uri).path) }
             } else {
                 Log.d("PhotoPicker", "No media selected")
             }
